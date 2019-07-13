@@ -1,6 +1,7 @@
 # First docker demo
 
 FROM ubuntu:latest
+VOLUME ["~/tmp/localvolume","/tmp/servervolume"]
 LABEL maintainer="jsonchou@outlook.com"
 
 RUN apt-get update
